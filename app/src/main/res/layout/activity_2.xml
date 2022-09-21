@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_below="@+id/textviewTen"
+            android:id="@+id/tg"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="170dp">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageviewHinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_1" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textviewTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pizza"
+            android:textColor="#208AF3"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textviewMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tg"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="30 items"
+            android:textColor="#F80000"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
